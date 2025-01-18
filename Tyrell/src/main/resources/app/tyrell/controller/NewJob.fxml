@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="jobPane" prefHeight="131.0" prefWidth="346.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #ebebee; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tyrell.controller.JobController">
+   <children>
+      <Text fx:id="title" layoutX="17.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product designer" wrappingWidth="324.2190628051758">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="24.0" fitWidth="311.0" layoutX="16.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../../../Icon/line.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="20.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" />
+      <AnchorPane layoutX="1.0" layoutY="92.0" prefHeight="41.0" prefWidth="343.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="311.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="Qualifications" strokeType="OUTSIDE" strokeWidth="0.0" text="M.Tech" wrappingWidth="78.27344131469727">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="Country" strokeType="OUTSIDE" strokeWidth="0.0" text="Isle of Man" textAlignment="CENTER" wrappingWidth="141.16668319702148" />
+                  <Text fx:id="Location" strokeType="OUTSIDE" strokeWidth="0.0" text="Douglas" textAlignment="RIGHT" wrappingWidth="83.40631103515625" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="61.0" prefHeight="13.0" prefWidth="53.0" style="-fx-background-color: #adc7cf; -fx-background-radius: 10;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="workType" strokeType="OUTSIDE" strokeWidth="0.0" text="Intern">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="45.0" prefHeight="13.0" prefWidth="66.0" style="-fx-background-color: #adc7cf; -fx-background-radius: 10;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="Experience" strokeType="OUTSIDE" strokeWidth="0.0" text="5 to 15 Years">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Button mnemonicParsing="false" onAction="#Details" prefHeight="127.0" prefWidth="298.0" style="-fx-background-radius: 10; -fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="detailsRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="1250.0" prefWidth="815.0" style="-fx-background-radius: 20; -fx-background-color: white; -fx-border-color: #ebebee; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tyrell.controller.DetailsController">
+   <children>
+      <Line endX="654.9999389648438" endY="-7.62939453125E-6" layoutX="129.04044087727866" layoutY="105.0" startX="-100.0" stroke="#f5f5f8" strokeWidth="2.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Text fx:id="title" layoutX="27.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Designer" wrappingWidth="273.38740158081055">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="Role" layoutX="28.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Social Media Manager" wrappingWidth="295.4700736999512" />
+      <Button layoutX="688.0" layoutY="41.0" mnemonicParsing="false" onAction="#edit" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #adc7cf;" text="Edit" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <VBox fx:id="detailsVBox" layoutX="30.666666666666664" layoutY="124.66666666666666" prefHeight="800.0" prefWidth="756.0" scaleShape="false" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="123.0">
+         <children>
+            <Text fx:id="fDescription" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriptions">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="9.0" prefWidth="758.0" />
+            <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="Social Media Managers oversee an organizations social media presence. They create and schedule content, engage with followers, and analyze social media metrics to drive brand awareness and engagement." wrappingWidth="749.0" />
+            <Pane prefHeight="9.0" prefWidth="758.0" />
+            <Text fx:id="fSkills" strokeType="OUTSIDE" strokeWidth="0.0" text="Skills">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="9.0" prefWidth="758.0" />
+            <Text fx:id="skills" strokeType="OUTSIDE" strokeWidth="0.0" text="Social media platforms (e.g., Facebook, Twitter, Instagram) Content creation and scheduling Social media analytics and insights Community engagement Paid social advertising" wrappingWidth="749.0" />
+            <Pane prefHeight="9.0" prefWidth="758.0" />
+            <Text fx:id="fResponsability" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsibilities">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="9.0" prefWidth="758.0" />
+            <Text fx:id="Responsibilities" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage and grow social media accounts, create engaging content, and interact with the online community. Develop social media content calendars and strategies. Monitor social media trends and engagement metrics." wrappingWidth="749.0" />
+            <Pane prefHeight="9.0" prefWidth="758.0" />
+            <Text fx:id="fBenefits" strokeType="OUTSIDE" strokeWidth="0.0" text="Benefits">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="9.0" prefWidth="758.0" />
+            <Text fx:id="Benefits" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage and grow social media accounts, create engaging content, and interact with the online community. Develop social media content calendars and strategies. Monitor social media trends and engagement metrics." wrappingWidth="749.0" />
+            <Pane prefHeight="9.0" prefWidth="758.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="755.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="755.0" spacing="28.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="7.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/buildings-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="companyName" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="7.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="number of employees" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/user-solid-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="companySize" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preference" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/male-female-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="preference" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posting Date" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/time-five-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="postingDate" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="755.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="755.0" spacing="28.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/map-pin-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="tLocation" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                              <Button layoutX="6.0" mnemonicParsing="false" onAction="#handleOpenGoogleMaps" prefHeight="189.0" prefWidth="163.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-radius: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/map-alt-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="country" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/money-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="salary" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Experience" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/calendar-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="experience" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="755.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="755.0" spacing="28.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qualifications" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/graduation-solid-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="Qualification" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Portal" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/sitemap-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="jobPortal" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <VBox alignment="CENTER" layoutX="6.666666666666666" layoutY="27.0" prefHeight="148.0" prefWidth="169.0" spacing="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="5.0">
+                                 <children>
+                                    <Text fx:id="nameContact" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="165.0" />
+                                    <Text fx:id="phoneContact" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" textAlignment="CENTER" wrappingWidth="165.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                           <children>
+                              <Text layoutX="6.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Working Type" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                              <AnchorPane layoutX="45.0" layoutY="59.0" prefHeight="77.0" prefWidth="76.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Icon/briefcase-alt-2-regular-36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="workingtype" layoutX="25.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="76.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.66666666666667" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" prefHeight="200.0" prefWidth="753.0" spacing="28.0">
+               <children>
+                  <AnchorPane prefHeight="167.0" prefWidth="166.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #ebebee; -fx-border-radius: 20;">
+                     <children>
+                        <Text layoutX="6.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Profile" textAlignment="CENTER" wrappingWidth="153.22138214111328" />
+                        <VBox layoutX="6.666666666666666" layoutY="27.0" prefHeight="148.0" prefWidth="169.0" spacing="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0">
+                           <children>
+                              <Text fx:id="Sector" strokeType="OUTSIDE" strokeWidth="0.0" text="Sector : Diversified" textAlignment="CENTER" wrappingWidth="165.0" />
+                              <Text fx:id="industry" strokeType="OUTSIDE" strokeWidth="0.0" text="Industry : Diversified Financials" textAlignment="CENTER" wrappingWidth="165.0" />
+                              <Text fx:id="city" strokeType="OUTSIDE" strokeWidth="0.0" text="City : Sunny Isles Beach" textAlignment="CENTER" wrappingWidth="165.0" />
+                              <Text fx:id="state" strokeType="OUTSIDE" strokeWidth="0.0" text="State : Florida" textAlignment="CENTER" wrappingWidth="165.0" />
+                              <Text fx:id="zip" strokeType="OUTSIDE" strokeWidth="0.0" text="Zip :33160" textAlignment="CENTER" wrappingWidth="165.0" />
+                              <Text fx:id="website" strokeType="OUTSIDE" strokeWidth="0.0" text="Website : www.ielp.com" textAlignment="CENTER" wrappingWidth="165.0" />
+                              <Text fx:id="ticker" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticker : IEP" textAlignment="CENTER" wrappingWidth="165.0" />
+                              <Text fx:id="ceo" strokeType="OUTSIDE" strokeWidth="0.0" text="CEO : David Willetts" textAlignment="CENTER" wrappingWidth="165.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Text fx:id="tId" layoutX="28.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1089843540111562" wrappingWidth="295.4700736999512" />
+   </children>
+</AnchorPane>

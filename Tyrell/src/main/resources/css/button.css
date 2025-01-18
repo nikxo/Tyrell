@@ -1,0 +1,9 @@
+/* Style général du bouton */
+.menu-button {
+    -fx-background-color: white;       /* Couleur d'arrière-plan */
+    -fx-border-color: #ebebee;           /* Couleur de la bordure */
+    -fx-border-radius: 5px;              /* Coins arrondis */
+    -fx-background-radius: 5px;     /* Marges internes */
+    -fx-font-family: 'Arial', sans-serif;/* Police */
+    -fx-font-size: 11px;                 /* Taille de la police */     /* Couleur du texte en rouge */
+}

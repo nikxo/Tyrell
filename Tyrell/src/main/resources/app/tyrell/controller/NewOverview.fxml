@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tyrell.controller.OverviewController">
+   <children>
+      <HBox layoutX="3.0" layoutY="53.0" prefHeight="661.0" prefWidth="1280.0" style="-fx-background-color: #f5f5f8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+         <children>
+            <AnchorPane prefHeight="517.0" prefWidth="389.0">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="44.0" layoutY="72.0" prefHeight="541.0" prefWidth="353.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="72.0">
+                     <content>
+                        <VBox fx:id="item" prefHeight="585.0" prefWidth="343.0" spacing="10.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="613.0" prefWidth="7.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="294.0" mnemonicParsing="false" onAction="#previousPage" prefHeight="32.0" prefWidth="45.0" style="-fx-background-color: transparent;" text="Button" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Icon/chevron-left-regular-24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="50.0" layoutY="27.0" prefHeight="17.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="-47.0" layoutY="-50.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Related to &quot;">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="jobName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="50.0" layoutY="48.0" prefHeight="19.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text fx:id="jobCount" strokeType="OUTSIDE" strokeWidth="0.0" text="NB" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Job Posting available" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <Button contentDisplay="RIGHT" layoutX="265.0" layoutY="30.0" mnemonicParsing="false" onAction="#sortByExperience" prefHeight="27.0" prefWidth="131.0" styleClass="menu-button" stylesheets="@../../../css/button.css" text="Sort by: Experience" textFill="#c4c5cb">
+                     <graphic>
+                        <ImageView fx:id="experienceArrow" fitHeight="21.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Icon/Transparent.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="617.0" prefWidth="26.0">
+               <children>
+                  <Button contentDisplay="GRAPHIC_ONLY" layoutY="294.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="32.0" prefWidth="42.0" style="-fx-background-color: transparent;" text="Button" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Icon/chevron-right-regular-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="337.0" prefWidth="815.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutY="30.0" prefHeight="587.0" prefWidth="815.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+                     <content>
+                        <AnchorPane fx:id="detailsPane" prefHeight="910.0" prefWidth="814.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="50.0" prefWidth="1280.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="jobField" prefHeight="25.0" prefWidth="346.0" promptText=" Search jobs..." styleClass="search-field" stylesheets="@../../../css/textField.css">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="idField" prefHeight="28.0" prefWidth="180.0" promptText="ID" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                  <TextField fx:id="countryField" prefHeight="28.0" prefWidth="180.0" promptText="Location" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                  <TextField fx:id="jobTypeField" prefHeight="28.0" prefWidth="180.0" promptText="Job type" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                  <Pane prefHeight="50.0" prefWidth="20.0" />
+                  <Button mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #adc7cf;" text="Search" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="exportButton" mnemonicParsing="false" onAction="#export" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #adc7cf;" text="Export" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="editPane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1280.0" style="-fx-background-color: #f5f5f8;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="overViewRoot" prefHeight="666.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tyrell.controller.AddController">
+   <children>
+      <VBox layoutX="28.0" layoutY="86.0" prefHeight="541.0" prefWidth="279.0" spacing="20.0">
+         <children>
+            <TextField fx:id="experience" prefHeight="28.0" prefWidth="177.0" promptText="Experience [e.g(2 to 4)]" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="qualification" prefHeight="28.0" prefWidth="177.0" promptText="Qualifications" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="salary" prefHeight="28.0" prefWidth="177.0" promptText="Salary Range [e.g(60 - 110)]" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="locationField" prefHeight="28.0" prefWidth="177.0" promptText="Location" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="country" prefHeight="28.0" prefWidth="177.0" promptText="Country" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="latitude" prefHeight="28.0" prefWidth="177.0" promptText="latitude" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="longitude" prefHeight="28.0" prefWidth="177.0" promptText="longitude" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="workingType" prefHeight="28.0" prefWidth="177.0" promptText="Work Type" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="companyName" prefHeight="28.0" prefWidth="177.0" promptText="Company" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="companySize" prefHeight="28.0" prefWidth="177.0" promptText="Company Size" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="postingDate" disable="true" prefHeight="28.0" prefWidth="177.0" promptText="Posting Date" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+         </children>
+      </VBox>
+      <VBox layoutX="360.0" layoutY="86.0" prefHeight="541.0" prefWidth="279.0" spacing="20.0">
+         <children>
+            <TextField fx:id="nameContact" prefHeight="28.0" prefWidth="177.0" promptText="Contact Person" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="phoneContact" prefHeight="28.0" prefWidth="177.0" promptText="Contact" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="title" prefHeight="28.0" prefWidth="177.0" promptText="Title" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="Role" prefHeight="28.0" prefWidth="177.0" promptText="Role" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="jobPortal" prefHeight="28.0" prefWidth="177.0" promptText="Portal" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <TextField fx:id="preference" prefHeight="28.0" prefWidth="177.0" promptText="Preference" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+            <AnchorPane prefHeight="257.0" prefWidth="279.0">
+               <children>
+                  <Text layoutX="96.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Profile" />
+                  <VBox layoutX="4.0" layoutY="38.0" prefHeight="169.0" prefWidth="131.0" spacing="5.0" AnchorPane.leftAnchor="0.0">
+                     <children>
+                        <TextField fx:id="sector" prefHeight="28.0" prefWidth="177.0" promptText="Sector" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                        <TextField fx:id="industry" prefHeight="28.0" prefWidth="177.0" promptText="Industry" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                        <TextField fx:id="city" prefHeight="28.0" prefWidth="177.0" promptText="City" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                        <TextField fx:id="state" prefHeight="28.0" prefWidth="177.0" promptText="State" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="140.0" layoutY="38.0" prefHeight="169.0" prefWidth="131.0" spacing="5.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <TextField fx:id="zip" prefHeight="28.0" prefWidth="177.0" promptText="Zip" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                        <TextField fx:id="website" prefHeight="28.0" prefWidth="177.0" promptText="Website" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                        <TextField fx:id="ticker" prefHeight="28.0" prefWidth="177.0" promptText="Ticker" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                        <TextField fx:id="ceo" prefHeight="28.0" prefWidth="177.0" promptText="CEO" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <TextField fx:id="idField" alignment="CENTER" disable="true" layoutX="245.0" layoutY="38.0" prefHeight="28.0" prefWidth="177.0" promptText="ID" styleClass="search-field" stylesheets="@../../../css/textField.css" />
+      <VBox layoutX="685.0" layoutY="86.0" prefHeight="200.0" prefWidth="547.0">
+         <children>
+            <AnchorPane prefHeight="58.0" prefWidth="525.0">
+               <children>
+                  <TextArea fx:id="description" layoutY="46.0" prefHeight="62.0" prefWidth="551.0" styleClass="search-area" stylesheets="@../../../css/textField.css" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Text layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="58.0" prefWidth="525.0">
+               <children>
+                  <TextArea fx:id="skills" layoutY="46.0" prefHeight="62.0" prefWidth="551.0" styleClass="search-area" stylesheets="@../../../css/textField.css" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Text layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="skills">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="58.0" prefWidth="525.0">
+               <children>
+                  <TextArea fx:id="responsibilities" layoutY="46.0" prefHeight="62.0" prefWidth="551.0" styleClass="search-area" stylesheets="@../../../css/textField.css" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Text layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsibilities">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="58.0" prefWidth="525.0">
+               <children>
+                  <TextArea fx:id="benefits" layoutY="46.0" prefHeight="62.0" prefWidth="551.0" styleClass="search-area" stylesheets="@../../../css/textField.css" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Text layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="skills">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button layoutX="863.0" layoutY="587.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #adc7cf;" text="Save" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="968.0" layoutY="587.0" mnemonicParsing="false" onAction="#loadModify" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #adc7cf;" text="Close" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

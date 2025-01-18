@@ -1,0 +1,32 @@
+.search-field {
+    -fx-background-color: #ffffff;             /* Fond blanc */
+    -fx-border-color: #e0e2e5;                 /* Bordure grise claire */
+    -fx-border-width: 1px;                     /* Épaisseur de la bordure */
+    -fx-border-radius: 5px;                    /* Coins arrondis */
+    -fx-background-radius: 5px;                /* Coins arrondis pour le fond */
+    -fx-font-size: 12px;                       /* Taille de la police */
+    -fx-text-fill: black;                    /* Couleur du texte en gris clair */
+}
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-highlight-fill: #7ecfff;
+}
+
+.text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: gray;
+    -fx-highlight-fill: #7ecfff;
+}
